@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web kita</title>
+    <style>
+        /* Reset default margin dan padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(bgbiru.jpg) ; background-size: cover;/* Background biru muda */
+            background-position: center;
+            color: #333;
+            text-align: center;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #1e90ff; /* Biru terang */
+            color: white;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+        }
+
+        /* Container untuk profile */
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        /* Styling untuk setiap profile */
+        .profile {
+            background-color: white;
+            border-radius: 50px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            border: 5px solid #1e90ff; /* Bingkai biru */
+        }
+
+        .profile .photo {
+            margin-bottom: 15px;
+        }
+
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Membuat foto menjadi bulat */
+            border: 4px solid #1e90ff; /* Bingkai biru pada foto */
+        }
+
+        .profile .info h2 {
+            font-size: 1.5em;
+            color: #1e90ff;
+        }
+
+        .profile .info p {
+            color: #666;
+            font-size: 1em;
+        }
+
+        /* Link styling */
+        .profile .info a {
+            display: inline-block;
+            margin-top: 15px;
+            text-decoration: none;
+            color: #1e90ff;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .profile .info a:hover {
+            color: #ff4500;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SELAMAT DATANG DI WEB KITA</h1>
+    </header>
+
+    <div class="container">
+        <div class="profile">
+            <div class="photo">
+                <img src="fotoela.jpeg" alt="Foto Orang 1">
+            </div>
+            <div class="info">
+                <h2>ISNIA NUR LAELA</h2>
+                <p>Kelas: XII TKJ A </p>
+                <a href="ela.html" target="_blank">Kunjungi Profil</a> <!-- Link ke profil Orang 1 -->
+            </div>
+        </div>
+
+        <div class="profile">
+            <div class="photo">
+                <img src="fotoqq.jpeg" alt="Foto Orang 2">
+            </div>
+            <div class="info">
+                <h2>ELSE DWI PRATISTA</h2>
+                <p>Kelas: XII TKJ A</p>
+                <a href="else.html" target="_blank">Kunjungi Profil</a> <!-- Link ke profil Orang 2 -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
